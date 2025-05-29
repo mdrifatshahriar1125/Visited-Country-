@@ -12,11 +12,12 @@ function App() {
 
   return (
     <>
-     <h1>this is new page</h1>
-     <Suspense fallback={<h3>countries data is loading</h3>}>
-     <Countries countryinfo={countryinfo}></Countries>
+    <div>
+       <Suspense fallback={<h3> Data is loading , Please wait....</h3>}>
+     <Countries  countryinfo={countryinfo}></Countries>
 
      </Suspense>
+    </div>
     </>
   )
 }
