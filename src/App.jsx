@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <div>
-       <Suspense fallback={<h3> Data is loading , Please wait....</h3>}>
+       <Suspense fallback={<h3> Website Data is loading , Please wait....</h3>}>
      <Countries  countryinfo={countryinfo}></Countries>
 
      </Suspense>

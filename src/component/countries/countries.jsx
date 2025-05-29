@@ -30,10 +30,11 @@ export default function Countries({countryinfo}){
         {
             console.log(visitedCountries)
         }
-        <h1>Number Of Country : {readcountryinfo.length}</h1>
-        <h1>Number Of Visited Country : {visitedCountries.length}</h1>
-        <h1>Visited Countries are</h1>
-        <ol>
+        <h1>Number Of  Country : {readcountryinfo.length}</h1>
+        <h1>Number Of Traveling Country : {visitedCountries.length}</h1>
+        <h1>Traveling Countries Are :</h1>
+<div style={visitedCountries.length === 0 ? {} : { border: '5px solid blue',borderRadius:'10px' }}>
+            <ol>
               {
                     visitedCountries.map((country, index) => (
                         <li key={index}>
@@ -43,6 +44,9 @@ export default function Countries({countryinfo}){
                     ))
                 }
         </ol>
+        </div>
+                <h1 style={{textAlign:"center"}}>Information Of All The Country</h1>
+
         <div className="countries">
             {
             readcountryinfo.map(country=><Country 
